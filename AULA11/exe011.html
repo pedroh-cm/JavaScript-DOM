@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de pais</title>
+</head>
+<body>
+    <h1>Simulador de Pais</h1>
+    Por favor DIGITE O <input type="text" name="txtpais" id="txtpais"> SEU PAIS
+    <input type="button" value="Verificar" onclick="geral()">
+    <div id="res"></div>
+    <script>
+        function geral() {
+            var pais = 'BRASIL'
+            var res = document.getElementById('res')
+            res.innerHTML = `Vivendo em ${pais}`
+            if(pais == 'BRASIL'){
+                res.innerHTML = `Você é Brasileiro(a)`
+            }else{
+                res.innerHTML = `Você é ESTRANGEIRO`
+            }
+        }
+    </script>
+    
+</body>
+</html>
